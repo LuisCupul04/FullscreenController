@@ -1,12 +1,20 @@
 package com.edgetoedge.fullscreen
 
 import android.content.Intent
+<<<<<<< HEAD
 import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.edgetoedge.fullscreen.databinding.ActivityMainBinding
 import rikka.shizuku.Shizuku
+=======
+import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.edgetoedge.fullscreen.databinding.ActivityMainBinding
+>>>>>>> 1044f2a (v3.0)
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,11 +29,22 @@ class MainActivity : AppCompatActivity() {
 
         adapter = AppAdapter { packageName ->
             ImmersiveManager.applyImmersive(this, packageName)
+<<<<<<< HEAD
+=======
+            Toast.makeText(this, "Immersive aplicado", Toast.LENGTH_SHORT).show()
+>>>>>>> 1044f2a (v3.0)
         }
 
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = adapter
 
+<<<<<<< HEAD
+=======
+        binding.btnSettings.setOnClickListener {
+            startActivity(Intent(this, SettingsActivity::class.java))
+        }
+
+>>>>>>> 1044f2a (v3.0)
         loadApps()
     }
 

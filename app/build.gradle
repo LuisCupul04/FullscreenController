@@ -12,11 +12,19 @@ android {
         minSdk 29
         targetSdk 34
         versionCode 1
+<<<<<<< HEAD
         versionName "1.0"
+=======
+        versionName "2.0"
+>>>>>>> 1044f2a (v3.0)
     }
 
     buildFeatures {
         dataBinding true
+<<<<<<< HEAD
+=======
+        viewBinding true
+>>>>>>> 1044f2a (v3.0)
     }
 
     compileOptions {
@@ -51,6 +59,11 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.3.2"
 
     // Shizuku
+<<<<<<< HEAD
     implementation 'dev.rikka.shizuku:api:13.1.5'
     implementation 'dev.rikka.shizuku:provider:13.1.5'
+=======
+    implementation 'dev.rikka.shizuku:api:13.1.3'
+    implementation 'dev.rikka.shizuku:provider:13.1.3'
+>>>>>>> 1044f2a (v3.0)
 }

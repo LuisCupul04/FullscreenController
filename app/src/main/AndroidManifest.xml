@@ -7,15 +7,34 @@
         android:theme="@style/Theme.Material3.DayNight.NoActionBar"
         android:label="Fullscreen Controller">
 
+<<<<<<< HEAD
         <activity
             android:name=".MainActivity"
             android:exported="true">
+=======
+        <!-- MAIN ACTIVITY -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+>>>>>>> 1044f2a (v3.0)
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+<<<<<<< HEAD
         </activity>
 
+=======
+
+        </activity>
+
+        <!-- SETTINGS ACTIVITY -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
+>>>>>>> 1044f2a (v3.0)
     </application>
 
 </manifest>
